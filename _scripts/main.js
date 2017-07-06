@@ -222,7 +222,7 @@
     var splitContent = document.querySelector('.header__right-section'),
       rev1 = new RevealFx(document.querySelector('#rev-1'), {
         revealSettings : {
-          bgcolor: '#F9D567',
+          bgcolor: '#CC5630',
           direction: 'lr',
           duration: 800,
           easing: 'easeInOutCirc',
