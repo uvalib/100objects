@@ -7,26 +7,18 @@ permalink: /overview/
 <section id="baseline">
   <div class="section typeset">
     <div class="single">
-      <h1>Faulkner: Life and Works</h1>
-      <p class="caption">An exhibition on the life and works of William Faulkner</p>
+      <h1>The University of Virginia in 100 Objects</h1>
+      <p class="caption">A Bicentennial exhibition celebrating the history of the University.</p>
       <h6>The Exhibition</h6>
-      <p>Surveying one of the great archives of American literature – the William Faulkner 
-      collections at the University of Virginia – this exhibition includes manuscripts 
-      alongside first editions and key archival documents.  The novelist’s life is narrated 
-      through the personae he inhabited: artist, aviator, screenwriter, Nobel prizewinner, 
-      white southerner, UVA writer-in-residence, and more. Die-hard fans, the general 
-      public, and even the Faulkner-phobic will find the unexpected.</p>
+      <p>Text available around 7/18 from Molly goes here.</p>
+      <p><em>The University of Virginia in 100 Objects</em>
+         is an exhibition coordinated by the University of 
+         Virginia Library with support from the University of Virginia Bicentennial and funding 
+         provided by the Alumni Board of Trustees.</p>
     </div>
   </div>
   <div class="section typeset">
     <div class="column column--main column--right">
-      <h6>Biography</h6>
-      <p>William Faulkner, who won the 1949 Nobel Prize for Literature, came to Charlottesville 
-      in 1957 to serve as UVA's first Writer-in-Residence, and remained at the University until 
-      his death in 1962. The Albert and Shirley Small Special Collections Library holds Faulkner's 
-      papers, as well as dozens of related collections that document Faulkner's works and life, 
-      including his time on Grounds.
-      </p>
       <h6>Visitor Policy</h6>
       <p>To enhance the experience of all guests and to protect our collections on display, 
       please note the following policies: </p>
