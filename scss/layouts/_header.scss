@@ -16,6 +16,7 @@ nav {
 
 .navigation__item {
   font-weight: 400;
+  font-style: italic;
   margin-left: 2rem;
   color: $headingColour;
   .navigation__link {
@@ -113,6 +114,7 @@ nav {
   .btn--tour {
     display: block;
     margin-left: -1.5rem;
+    font-style: normal;
   }
 }
 
