@@ -75,6 +75,11 @@ $ htmlproofer ./_site
 [travis-image]: https://travis-ci.org/uvalib/100objects.svg?branch=master
 [travis-url]: https://travis-ci.org/uvalib/100objects
 
+## Designers/Developers
+
+The underlying templates used so far for exhibitions have the [Flex Layout Attribute](http://progressivered.com/fla/)
+for responsive design and laying out the content.
+
 ## Content Writers
 1. Edit the files in the [master branch](https://github.com/uvalib/100objects/tree/master)
 2. Build will automatically begin
