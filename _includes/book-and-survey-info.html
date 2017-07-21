@@ -1,10 +1,12 @@
 <section class="book-survey-info" aria-label="Book purchase information and submitting ideas for additional objects">
-    <div class="container">
+    <div class="">
         <div layout="rows stretch-stretch">
-            <div layout="column center-center" class="">
-                <div layout="row center-center" class="book-info__item" self="sm-full size-1of2">
-                    <img src="{{ site.baseurl }}/images/MrJefferson-Telescope.jpg" width="160" height="160" alt="Cover image for Mr. Jefferson's Telescope book">
+            <div layout="column stretch" class="">
+                <div layout="row stretch-center" class="book-info__item" self="sm-full size-1of2">
                     <div layout="column center-center">
+                        <img src="{{ site.baseurl }}/images/MrJefferson-Telescope.jpg" width="160" height="160" alt="Cover image for Mr. Jefferson's Telescope book">
+                    </div>
+                    <div layout="column center-left">
                         <div class="book-info__title">Buy the Book</div>
                         <div class="book-info">
                             <div class="gallery-info__hours">
@@ -13,21 +15,23 @@
                             </div>
                         </div>
                         <div class="book-info__action">
-                            <a class="btn btn--primary btn--tour" href="http://www.upress.virginia.edu/title/5036" class="action__secondary">Get my copy</a>
+                            <a class="btn btn--primary" href="http://www.upress.virginia.edu/title/5036" class="action__secondary">Get my copy</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div layout="column center-center" class="">
-                <div layout="row center-center" class="survey-info__item" self="sm-full size-1of2">
-                    <img src="{{ site.baseurl }}/images/101.png" width="160" height="160" alt="101st object icon">
+            <div layout="column stretch" class="">
+                <div layout="row stretch-center" class="survey-info__item" self="sm-full size-1of2">
                     <div layout="column center-center">
-                        <div class="survey-info__title">Is "100 Objects" enough?</div>
+                        <img layout="row stretch-stretch" src="{{ site.baseurl }}/images/101.png" width="160" height="160" alt="101st object icon">
+                    </div>
+                    <div layout="column center-stretch">
+                        <div class="survey-info__title">Is "100 Objects" enough? Absolutely not.</div>
                         <div class="survey-info__blurb">
                             If you could add an item to this exhibition, what would it be?
                         </div>
                         <div class="survey-info__action">
-                            <a class="btn btn--primary btn--tour" href="{{ site.baseurl }}/101st-object/">Submit an object</a>
+                            <a class="btn btn--primary" href="{{ site.baseurl }}/101st-object/">Submit an object</a>
                         </div>
                     </div>
                 </div>

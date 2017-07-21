@@ -100,20 +100,24 @@ nav {
   transform: translateY(-100%);
 }
 
+.break__content {
+  border: 1px solid #fff;
+  padding: 0px;
+  opacity: 0.5;
+}
+
 .get-app {
   margin-top: 66px;
 }
 
-.get-app__left-section {
-}
-
-.get-app__right-section {
-  background-color: #b93f22;
-}
 
 .navigation__item {
 
   .home__link {
+    display: none;
+  }
+
+  .short_app__link {
     display: none;
   }
 
@@ -128,14 +132,19 @@ nav {
   }
 }
 
-
-
-
 @media screen and (max-width: 40em) {
   .navigation__item {
 
     .home__link {
       display: block;
+    }
+
+    .short_app__link {
+      display: block;
+    }
+
+    .app__link {
+      display: none;
     }
 
     .tour__link {
@@ -157,6 +166,9 @@ nav {
     display: none;
   }
   .header__left-section {
+    display: none;
+  }
+  .get-app__left-section {
     display: none;
   }
   h1 {
