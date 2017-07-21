@@ -173,7 +173,6 @@ gulp.task('jekyll-build-dev', ['scripts', 'scss'], $.shell.task([ 'bundle exec j
 // Default local task.
 gulp.task('default', () =>
   runSequence(
-    'bower',
     'scss',
     'jekyll-build-dev',
     'minify-html',

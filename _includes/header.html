@@ -1,7 +1,9 @@
 <header id="rev-1" class="header" role="banner">
   <div layout="rows stretch-stretch">
     <div layout="row center-center" class="header__left-section">
-      <img src="{{ site.baseurl }}/images/main-rotating-35key.png" alt="key to the rotunda">
+      <uvalib-model-query random="{% raw  %}{{object}}{% endraw  %}" content-type="mediaobjects" order-by="association" equal-to="100objectsBanner"></uvalib-model-query>
+      <uvalib-image alt="[[object.title]]" uuid="[[object.image.uuid]]"></uvalib-image>
+      <!--<img src="{{ site.baseurl }}/images/main-rotating-35key.png" alt="key to the rotunda">-->
     </div>
     <div layout="column center-left" class="header__right-section">
       <div class="header__content">
