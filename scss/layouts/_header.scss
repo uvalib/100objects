@@ -26,7 +26,7 @@ nav {
     height: 62px;
     display: block;
     &:hover {
-      color: #E3AD22;
+      color: #b93f22;
     }
   }
 }
@@ -99,6 +99,17 @@ nav {
 
 .headroom--unpinned {
   transform: translateY(-100%);
+}
+
+.get-app {
+  margin-top: 66px;
+}
+
+.get-app__left-section {
+}
+
+.get-app__right-section {
+  background-color: #b93f22;
 }
 
 .navigation__item {
