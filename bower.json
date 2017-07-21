@@ -1,0 +1,26 @@
+{
+  "name": "100objects",
+  "description": "100 Objects exhibit marketing page",
+  "main": "index.html",
+  "authors": [
+    "jlk4p"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/uvalib/100objects",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "lodash": "^4.17.4",
+    "promise-polyfill": "^6.0.2",
+    "app-storage": "1 - 2"
+  },
+  "dependencies": {
+    "uvalib-elements": "uvalib-components/uvalib-elements#master"
+  }
+}

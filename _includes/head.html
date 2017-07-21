@@ -1,5 +1,5 @@
 <head>
-  
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,8 +36,27 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
   <!-- Web Application Manifest -->
-  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">  
+  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
 
-  <script>document.documentElement.className = 'js';</script>
+  <script>
+    document.documentElement.className = 'js';
+
+    // setup Polymer options
+    window.Polymer = {lazyRegister: true}; //, dom: 'shadow'};
+
+    // load webcomponents polyfills
+    (function() {
+      if ('registerElement' in document
+          && 'import' in document.createElement('link')
+          && 'content' in document.createElement('template')) {
+        // browser has web components
+      } else {
+        // polyfill web components
+        var e = document.createElement('script');
+        e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+        document.head.appendChild(e);
+      }
+    })();
+  </script>
 
 </head>

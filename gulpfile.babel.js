@@ -7,8 +7,14 @@ import browserSync from 'browser-sync';
 import access from 'gulp-accessibility';
 import swPrecache from 'sw-precache';
 import rename from 'gulp-rename';
+import bower from 'gulp-bower';
 
 const $ = gulpLoadPlugins();
+
+// Install bower packages
+gulp.task('bower', function(){
+  return bower();
+});
 
 // Test our website accessibility
 gulp.task('accessibility', function() {
@@ -167,6 +173,7 @@ gulp.task('jekyll-build-dev', ['scripts', 'scss'], $.shell.task([ 'bundle exec j
 // Default local task.
 gulp.task('default', () =>
   runSequence(
+    'bower',
     'scss',
     'jekyll-build-dev',
     'minify-html',
