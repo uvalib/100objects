@@ -18,9 +18,11 @@
   "resolutions": {
     "lodash": "^4.17.4",
     "promise-polyfill": "^6.0.2",
-    "app-storage": "1 - 2"
+    "app-storage": "1 - 2",
+    "uvalib-banner": "new"
   },
   "dependencies": {
-    "uvalib-elements": "uvalib-components/uvalib-elements#master"
+    "uvalib-elements": "uvalib-components/uvalib-elements#master",
+    "uvalib-banner": "uvalib-components/uvalib-banner#new"
   }
 }
