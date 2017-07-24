@@ -61,6 +61,11 @@
   padding-top: 24px;
 }
 
+.btn--book-survey {
+  display: block;
+  z-index: 1;
+}
+
 .gallery-info {
   background-color: #333D43;
   padding-bottom: 50px;
@@ -74,11 +79,6 @@
   flex-direction: column;
   margin: 10px 20px 10px 0px;
   padding: 15px; 
-}
-
-.btn--book-survey {
-  display: block;
-  z-index: 1;
 }
 
 .gallery-info__title {

@@ -13,7 +13,8 @@ const $ = gulpLoadPlugins();
 
 // Install bower packages
 gulp.task('bower', function(){
-  return bower();
+//  return bower().pipe(gulp.dest('_site/'));
+    return bower();
 });
 
 // Test our website accessibility
