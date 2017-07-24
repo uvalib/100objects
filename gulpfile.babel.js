@@ -13,7 +13,7 @@ const $ = gulpLoadPlugins();
 
 // Install bower packages
 gulp.task('bower', function(){
-//  return bower().pipe(gulp.dest('_site/'));
+//  return bower().pipe(gulp.dest('./_site/'));
     return bower();
 });
 
