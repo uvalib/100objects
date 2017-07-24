@@ -87,6 +87,14 @@ nav {
   line-height: 1.5;
 }
 
+.header__location a {
+  background-color: #b93f22;
+  color: #ffffff;
+}
+.header__location a:hover {
+  color: #0d192e;
+}
+
 .headroom {
   will-change: transform;
   transition: transform 200ms linear;
@@ -108,6 +116,7 @@ nav {
 .break__content {
   border: 1px solid #fff;
   padding: 0px;
+  margin-top: 20px;
   opacity: 0.5;
 }
 
@@ -115,6 +124,43 @@ nav {
   margin-top: 66px;
 }
 
+.get-app__right-section {
+  background-color: #b93f22;
+}
+
+header-app__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-app-icon {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.header-app__subtitle {
+  flex-grow: 0;
+  font-family: unquote(map-get($headingtype, font-family));
+  font-size: 24px;
+  line-height: 1;
+}
+
+.header-app__blurb {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-app__action {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 20px;
+}
 
 .navigation__item {
 
