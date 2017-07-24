@@ -100,6 +100,11 @@ nav {
   transform: translateY(-100%);
 }
 
+.btn--main {
+  display: block;
+  z-index: 1;
+}
+
 .break__content {
   border: 1px solid #fff;
   padding: 0px;

@@ -23,15 +23,45 @@
 }
 
 .book-survey-info {
-  // background-color: #26334D;
   background-color: #c3b480;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   padding-top: 20px;
   color: #ffffff;
 }
 
+.book-survey-icon {
+  padding-right: 20px;
+}
+
+.book-survey-info__item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 20px 10px 0px;
+  padding: 15px;
+}
+
+.book-survey-info__title {
+  flex-grow: 0;
+  font-family: unquote(map-get($headingtype, font-family));
+  font-size: 24px;
+  line-height: 1;
+}
+
+.book-survey-info__blurb {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+.book-survey-info__action {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding-top: 24px;
+}
+
 .gallery-info {
-  // background-color: #26334D;
   background-color: #333D43;
   padding-bottom: 50px;
   padding-top: 20px;
@@ -46,24 +76,30 @@
   padding: 15px; 
 }
 
+.btn--book-survey {
+  display: block;
+  z-index: 1;
+}
+
 .gallery-info__title {
   color: #1A1A1A;
   flex-grow: 0;
-  font-size: 18px;
+  font-family: unquote(map-get($headingtype, font-family));
+  font-size: 24px;
   line-height: 1;
 }
 
 .gallery-info__blurb {
   color: #1A1A1A;
   flex-grow: 1;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   padding-top: 10px;
 }
 
 .gallery-info__action {
   color: #26334D;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1;
   padding-top: 24px;
