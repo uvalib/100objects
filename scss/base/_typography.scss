@@ -29,7 +29,7 @@ a {
   transition: color .1s, background-color .1s;
 
   &:hover, &:active, &:focus {
-    color: $hoverColour;
+/*    color: $hoverColour;*/
     text-decoration: none;
   }
 }

@@ -41,6 +41,7 @@
 }
 
 .btn:focus {
+  transform: translate3d(0, -2px, 0);
   color: #b93f22;
 }
 
