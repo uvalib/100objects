@@ -20,7 +20,7 @@
 /*  margin-bottom: 10px;*/
   font-weight: 700;
   
-  &:hover {
+  &:hover, &:focus, &:active {
 /*    color: #b93f22;*/
     text-decoration: underline;
   }
@@ -42,6 +42,12 @@
 
 .footer__right {
   padding-left: 100px;
+}
+
+.footer__right a {
+  &:hover, &:focus, &:active {
+    border: #ffffff solid;
+  }
 }
 
 @media screen and (max-width: 60em) {

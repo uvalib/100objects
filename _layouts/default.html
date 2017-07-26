@@ -9,11 +9,12 @@
 
     {% include navigation.html %}
 
-    {% if page.url == "/" %}
-      {% include header.html %}
-    {% endif %}
 
     <main id="content" role="main">
+      {% if page.url == "/" %}
+      {% include header.html %}
+      {% endif %}
+
       {{ content }}
     </main>
 

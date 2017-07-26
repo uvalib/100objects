@@ -135,10 +135,13 @@ header-app__content {
   flex-direction: row;
 }
 
-.header-app-icon {
+.header-app__icon {
   padding-left: 30px;
   padding-bottom: 30px;
   width: 100%;
+}
+
+.header-app__info {
 }
 
 .header-app__subtitle {
