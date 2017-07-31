@@ -10,7 +10,6 @@ permalink: /overview/
       <h1>The University of Virginia in 100 Objects</h1>
       <p class="caption">A Bicentennial exhibition celebrating the history of the University.</p>
       <h6>The Exhibition</h6>
-      <p>Text available around 7/18 from Molly goes here.</p>
       <p><em>The University of Virginia in 100 Objects</em>
          is an exhibition coordinated by the University of 
          Virginia Library with support from the University of Virginia Bicentennial and funding 
