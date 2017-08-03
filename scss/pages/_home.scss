@@ -29,15 +29,17 @@
   color: #ffffff;
 }
 
-.book-survey-icon {
-  padding-right: 20px;
-}
 
 .book-survey-info__item {
   display: flex;
   flex-direction: row;
   margin: 10px 20px 10px 0px;
   padding: 15px;
+}
+
+.book-survey-icon {
+  flex-grow: 1;
+  padding-right: 20px;
 }
 
 .book-survey-info__title {
@@ -62,7 +64,6 @@
 }
 
 .btn--book-survey {
-  display: block;
   z-index: 1;
 }
 
@@ -215,5 +216,30 @@
 .contains__link a {
   &:hover, &:focus, &:active {
     text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 60em) {
+}
+
+@media screen and (max-width: 40em) {
+  .book-survey-info__item {
+    flex-direction: column;
+  }
+
+  .book-survey-icon {
+    flex-grow: 1;
+  }
+
+  .book-survey-info__title {
+    padding-top: 30px;
+  }
+
+  .book-survey-info__blurb {
+    flex-grow: 0;
+  }
+
+  #baseline {
+    padding: 5px;
   }
 }

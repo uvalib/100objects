@@ -173,10 +173,6 @@ header-app__content {
     display: none;
   }
 
-  .short_app__link {
-    display: none;
-  }
-
   .tour__link {
     display: none;
   }
@@ -188,19 +184,30 @@ header-app__content {
   }
 }
 
+.short_app__link {
+  display: none;
+}
+
+@media screen and (max-width: 60em) {
+  .navigation__item .navigation__link {
+    font-size: 16px;
+  }
+
+  .short_app__link {
+    display: block;
+  }
+
+  .app__link {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 40em) {
   .navigation__item {
+    margin-left: 1.75rem;
 
     .home__link {
       display: block;
-    }
-
-    .short_app__link {
-      display: block;
-    }
-
-    .app__link {
-      display: none;
     }
 
     .tour__link {
@@ -210,10 +217,19 @@ header-app__content {
       display: none;
     }
   }
+
+ .short_app__link {
+    display: block;
+  }
+
+  .app__link {
+    display: none;
+  }
+
   nav {
     padding: 0px;
     align-items: center;
-    justify-content: center;
+/*    justify-content: center;*/
   }
   .navigation__item .navigation__link {
     font-size: 14px;

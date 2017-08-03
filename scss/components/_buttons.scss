@@ -83,6 +83,23 @@
   margin-left: 30px;
 }
 
+
+@media screen and (max-width: 71.25em) {
+  .btn--tour, .btn--main, .btn--book-survey {
+    font-size: 15px;
+    padding: 0px 1rem;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .btn--tour, .btn--main, .btn--book-survey {
+    font-size: 14px;
+    padding: 0px 10px;
+    line-height: 40px;
+    height: 40px;
+  }
+}
+
 @media screen and (max-width: 40em) {
   .btn--tour, .btn--main, .btn--book-survey {
     font-size: 14px;
