@@ -224,11 +224,7 @@
 
 @media screen and (max-width: 40em) {
   .book-survey-info__item {
-    flex-direction: column;
-  }
-
-  .book-survey-icon {
-    flex-grow: 1;
+/*    justify-content: flex-start !important;*/
   }
 
   .book-survey-info__title {
@@ -236,7 +232,7 @@
   }
 
   .book-survey-info__blurb {
-    flex-grow: 0;
+    flex-grow: 1;
   }
 
   #baseline {
