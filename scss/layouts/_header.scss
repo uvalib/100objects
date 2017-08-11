@@ -204,7 +204,7 @@ header-app__content {
 
 @media screen and (max-width: 40em) {
   .navigation__item {
-    margin-left: 1.75rem;
+    margin-left: 1.0rem;
 
     .home__link {
       display: block;
@@ -229,7 +229,7 @@ header-app__content {
   nav {
     padding: 0px;
     align-items: center;
-/*    justify-content: center;*/
+    justify-content: center;
   }
   .navigation__item .navigation__link {
     font-size: 14px;
