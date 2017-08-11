@@ -219,16 +219,30 @@
   }
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 64em) {
+}
+
+@media screen and (max-width: 52em) {
 }
 
 @media screen and (max-width: 40em) {
+
+  .book-survey-info {
+    display: flex;
+  }
+
   .book-survey-info__item {
-/*    justify-content: flex-start !important;*/
+    display: block;
+    flex-direction: column;
+  }
+
+  .book-survey-icon {
+    flex-direction: column;
   }
 
   .book-survey-info__title {
-    padding-top: 30px;
+    padding-top: 25px;
+    flex-grow: 0;
   }
 
   .book-survey-info__blurb {
