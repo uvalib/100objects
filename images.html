@@ -4,12 +4,43 @@ title: Images
 permalink: /images/
 ---
 <link rel="import" href="/bower_components/uvalib-banner/uvalib-typed-banners.html">
+<link rel="import" href="/bower_components/iron-media-query/iron-media-query.html">
+
+<style is="custom-style">
+uvalib-typed-banners {
+        height: 515px !important;
+        font-size: .25em !important;
+        --uvalib-banner-desc-height: 200px;
+      }
+      @media screen and ( max-width: 64em ){
+        uvalib-typed-banners {
+          --uvalib-banner-desc-height: 140px;
+        }
+      }
+      @media screen and ( max-width: 52em ){
+        uvalib-typed-banners {
+          --uvalib-banner-desc-height: 160px;
+        }
+      }
+      @media screen and ( max-width: 40em ){
+        uvalib-typed-banners {
+          --uvalib-banner-desc-height: 210px;
+          --uvalib-banner-thumb-height: 70px;
+          font-size: .9em;
+        }
+      }
+      </style>
+
 <header class="page__header">
   <h1 class="page__title">
     <div class="page__quote">
       Selected Images from The University of Virginia in 100 Objects Exhibition
     </div>
-    <uvalib-typed-banners style="height: 400px; padding: 10px;"></uvalib-typed-banners>
+    <!--<uvalib-typed-banners style="height: 400px; padding: 10px;"></uvalib-typed-banners>-->
+    <template is="dom-bind">
+      <iron-media-query query="(max-width: 40em)" query-matches="{{smScreen}}"></iron-media-query>
+      <uvalib-typed-banners thumbs buttons$="{{!smScreen}}"></uvalib-typed-banners>
+    </template>
   </h1>
 </header>
 
