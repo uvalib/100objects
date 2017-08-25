@@ -9,7 +9,6 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "3.3.1"
-gem "public_suffix", "2.0.5"
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do
