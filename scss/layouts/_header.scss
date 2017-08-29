@@ -168,11 +168,6 @@ header-app__content {
 }
 
 .navigation__item {
-
-  .home__link {
-    display: none;
-  }
-
   .tour__link {
     display: none;
   }
@@ -182,6 +177,14 @@ header-app__content {
     margin-left: -1.5rem;
     font-style: normal;
   }
+}
+
+.lib__link {
+  display: none;
+}
+
+.short_home__link {
+  display: none;
 }
 
 .short_app__link {
@@ -206,16 +209,20 @@ header-app__content {
   .navigation__item {
     margin-left: 1.0rem;
 
-    .home__link {
-      display: block;
-    }
-
     .tour__link {
       display: block;
     }
     .btn--tour {
       display: none;
     }
+  }
+
+  .long_home__link {
+    display: none;
+  }
+
+  .short_home__link {
+    display: block;
   }
 
  .short_app__link {
@@ -236,6 +243,9 @@ header-app__content {
   }
   .logo {
     display: none;
+  }
+  .lib__link {
+    display: block;
   }
   .header__left-section {
     display: none;
