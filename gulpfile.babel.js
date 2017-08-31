@@ -208,7 +208,6 @@ gulp.task('deploy-to-test', () => {
     'minify-html',
     'css',
     'generate-service-worker-gh-pages',
-    'minify-images',
-    'gh-pages'
+    'minify-images'
   )
 });
