@@ -7,6 +7,7 @@
     "gulp": "gulp",
     "gulp deploy": "gulp deploy-to-test",
     "gulp deploy-to-prod": "gulp deploy-to-prod",
+    "test-deploy": "rsync -rltvz --delete _site/ uxdev.lib.virginia.edu:/var/www/html/100objects"
     "prod-deploy": "rsync -rltvz --delete _site/ static01.lib.virginia.edu:/lib_content47/100objects"
   },
   "author": "jlk4p",

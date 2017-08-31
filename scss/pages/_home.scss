@@ -22,6 +22,10 @@
   color: #000000;
 }
 
+.section .single h1 {
+  text-align: center;
+}
+
 .book-survey-info {
   background-color: #C3B480;
   padding-bottom: 20px;
@@ -54,6 +58,13 @@
   font-size: 16px;
   line-height: 1.5;
   padding-top: 10px;
+}
+
+.book-survey-info__blurb a {
+  color: white;
+  &:hover, &:focus, &:active {
+    text-decoration: underline;
+  }
 }
 
 .book-survey-info__action {
