@@ -1,0 +1,59 @@
+{% for object in site.newobjects %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if object.ready == 'true' %}
+        {% if thecycle == 'even' %}
+        <div layout="row center-stretch sm-column md-column" class="sm-layout-adjust">
+            <div class="image__media" self="size-x1">
+                <figure class="full zoom-effect">
+                    <div class="aspectRatioPlaceholder" >
+                        <div class="aspect-ratio-fill" style="padding-bottom: 77.47%;"></div>
+                        <img class="img" data-width="{{object.photo_width}}" data-height="{{object.photo_height}}" src="{{ site.baseurl }}/images/newobjects/{{object.photo_file_name}}" alt="{{object.next_object}}">
+                    </div>
+                </figure>
+            </div>
+            <div class="image__info">
+                <div class="image__title">
+                    {{object.next_object}}<br>
+                    <p>{{object.why}}</p>
+                    {% if object.may_we_share == 'yes' %}
+                    Submitted by {{object.name}} ({{object.affiliation}}) on {{object.date_submitted}}
+                    {% endif %}
+                    {% if object.may_we_share != 'yes' %}
+                    Submitted by Anonymous on {{object.date_submitted}}
+                    {% endif %}
+                </div>
+                <div class="image__caption">
+                    Credits: {{object.photo_credit}}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% if thecycle == 'odd' %}
+        <div layout="row center-stretch sm-column md-column" class="reverse-second sm-layout-adjust">
+            <div class="image__info">
+                <div class="image__title">
+                    {{object.next_object}}<br>
+                    <p>{{object.why}}</p>
+                    {% if object.may_we_share == 'yes' %}
+                    Submitted by {{object.name}} ({{object.affiliation}}) on {{object.date_submitted}}
+                    {% endif %}
+                    {% if object.may_we_share != 'yes' %}
+                    Submitted by Anonymous on {{object.date_submitted}}
+                    {% endif %}
+                </div>
+                <div class="image__caption">
+                    Credits: {{object.photo_credit}}
+                </div>
+            </div>
+            <div class="image__media" self="size-x1">
+                <figure class="full zoom-effect">
+                    <div class="aspectRatioPlaceholder">
+                        <div class="aspect-ratio-fill" style="padding-bottom: 65.30%;"></div>
+                        <img class="img" data-width="{{object.photo_width}}" data-height="{{object.photo_height}}" src="{{ site.baseurl }}/images/newobjects/{{object.photo_file_name}}" alt="{{object.next_object}}">
+                    </div>
+                </figure>
+            </div>
+        </div>
+        {% endif %}
+    {% endif %}
+{% endfor %}

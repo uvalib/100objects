@@ -43,3 +43,5 @@ exclude: [
 collections:
   news:
     output: false
+  newobjects:
+    output: false

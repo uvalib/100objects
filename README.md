@@ -75,6 +75,43 @@ $ htmlproofer ./_site
 [travis-image]: https://travis-ci.org/uvalib/100objects.svg?branch=master
 [travis-url]: https://travis-ci.org/uvalib/100objects
 
+## Adding New 101st Object Submissions
+* If an image was submitted, then save the image to your computer and upload into the github repository to the /images/newobjects 
+directory. Identify the width and height of the uploaded image to use later.
+* Create a new file in the _newobjects folder using the naming convention of object101?.md 
+where the question mark gets replaced with a letter of the alphabet. Start backwards with 
+the letter _z_ as you add an one, which should allow for up to 26 submissions - we can come 
+up with a name convention change if you expect more. This will place the newer item at the 
+top of the file directory listing and thus put it at the top of the page. For example, 
+_object101z.md_ was created with Molly's submission information into it since her entry is 
+the first received. Then Margo Smith's entry was put in _object101y.md_ since it was the 
+second.
+* Populate the new *object101* file with the follow lines (which contain an example of content):
+```
+—
+ready: "true"
+date_submitted: "August 14, 2017"
+name: "Eric Seidel"
+affiliation: "Current UVA faculty or staff"
+may_we_share: "no"
+email_address: "eks4x@virginia.edu"
+next_object: "The peace symbol"
+why: "We need it now"
+photo_file_name: "101.png"
+photo_credit: "UVA Library"
+photo_width: "800"
+photo_height: "800"
+—
+```
+* Make sure you specify the dimensions from the uploaded image file in the corresponding photo_width and photo_height 
+lines inside of the new file. If an image was not submitted, then just use "101.png" for the file name and 800 for both 
+the width and height.
+* When may_we_share has a value of "no" then the person who submitted the item is not displayed on the output page.
+
+NOTE: The code looks for the _ready_ line and makes sure it has a value of "true" before adding the content to the 
+submissions page. So you may tentatively create new object submission files and have that 
+line with a value of "false" and it will not appear on the page.
+
 ## Designers/Developers
 
 The underlying templates used so far for exhibitions have the [Flex Layout Attribute](http://progressivered.com/fla/)
@@ -84,3 +121,4 @@ for responsive design and laying out the content.
 1. Edit the files in the [master branch](https://github.com/uvalib/100objects/tree/master)
 2. Build will automatically begin
 3. View your changes in production at http://100objects.lib.virginia.edu/
+
