@@ -80,7 +80,7 @@ $ htmlproofer ./_site
 directory. Identify the width and height of the uploaded image to use later.
 * Create a new file in the _newobjects folder using the naming convention of object101?.md 
 where the question mark gets replaced with a letter of the alphabet. Start backwards with 
-the letter _z_ as you add an one, which should allow for up to 26 submissions - we can come 
+the letter _z_ as you add a new one, which should allow for up to 26 submissions - we can come 
 up with a name convention change if you expect more. This will place the newer item at the 
 top of the file directory listing and thus put it at the top of the page. For example, 
 _object101z.md_ was created with Molly's submission information into it since her entry is 
@@ -105,7 +105,7 @@ photo_height: "800"
 ```
 * Make sure you specify the dimensions from the uploaded image file in the corresponding photo_width and photo_height 
 lines inside of the new file. If an image was not submitted, then just use "101.png" for the file name and 800 for both 
-the width and height.
+the width and height. Without image width and height correctly entered, the image may be distorted.
 * When may_we_share has a value of "no" then the person who submitted the item is not displayed on the output page.
 
 NOTE: The code looks for the _ready_ line and makes sure it has a value of "true" before adding the content to the 
