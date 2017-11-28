@@ -38,6 +38,7 @@ exclude: [
   "sass",
   "scss",
   "reports",
+  "vendor"
 ]
 
 collections:

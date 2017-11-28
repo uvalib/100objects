@@ -37,7 +37,8 @@ exclude: [
   ".gitignore",
   "sass",
   "scss",
-  "reports"
+  "reports",
+  "vendor"
 ]
 
 collections:
