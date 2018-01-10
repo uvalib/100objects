@@ -167,8 +167,8 @@ gulp.task('generate-service-worker-gh-pages', function(callback) {
   }, callback);
 });
 
-gulp.task('jekyll-build-prod', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config.yml' ]));
-gulp.task('jekyll-build-test', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config-test.yml' ]));
+gulp.task('jekyll-build-prod', ['scripts', 'scss'], $.shell.task([ 'bundle exec jekyll build --config _config.yml' ]));
+gulp.task('jekyll-build-test', ['scripts', 'scss'], $.shell.task([ 'bundle exec jekyll build --config _config-test.yml' ]));
 gulp.task('jekyll-build-dev', ['scripts', 'scss'], $.shell.task([ 'bundle exec jekyll build --config _config.yml,_config-dev.yml' ]));
 
 // Default local task.
@@ -188,7 +188,7 @@ gulp.task('deploy-to-prod', () => {
   runSequence(
     'scss',
     'jekyll-build-prod',
-    'minify-html',
+//    'minify-html',
     'css',
     'generate-service-worker-production',
     'minify-images'
