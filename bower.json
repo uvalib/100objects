@@ -31,7 +31,7 @@
     "iron-icon": "1 - 2",
     "iron-iconset-svg": "1 - 2",
     "swiper": "^4.0.3",
-    "uvalib-elements": ^1.0",
+    "uvalib-elements": "^1.0",
     "uvalib-logos": "master",
     "web-component-tester": "^5.0.1",
     "paper-material": "^1.0.5",
