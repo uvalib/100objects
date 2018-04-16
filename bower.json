@@ -71,6 +71,7 @@
   "dependencies": {
     "uvalib-elements": "uvalib-components/uvalib-elements#master",
     "uvalib-banner": "uvalib-components/uvalib-banner#new",
-    "uvalib-models": "uvalib-components/uvalib-models#ff2b48a"
+    "uvalib-models": "uvalib-components/uvalib-models#ff2b48a",
+    "uvalib-images": "uvalib-components/uvalib-images#master"
   }
 }
