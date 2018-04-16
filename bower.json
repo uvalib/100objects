@@ -69,7 +69,7 @@
     "neon-animation": "1 - 2"
   },
   "dependencies": {
-    "uvalib-elements": "uvalib-components/uvalib-elements#master",
+    "uvalib-elements": "uvalib-components/uvalib-elements#b513b8e",
     "uvalib-banner": "uvalib-components/uvalib-banner#new",
     "uvalib-models": "uvalib-components/uvalib-models#ff2b48a"
   }
