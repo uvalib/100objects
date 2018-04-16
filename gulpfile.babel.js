@@ -41,7 +41,7 @@ gulp.task('accessibility', function() {
 
 // Minify the HTML.
 gulp.task('minify-html', () => {
-  return gulp.src('_site/**/*.html')
+  return gulp.src(['_site/**/*.html', '!_site/bower_components/**'])
     .pipe($.htmlmin({
       removeComments: true,
       collapseWhitespace: true,
