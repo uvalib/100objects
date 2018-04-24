@@ -6,7 +6,7 @@
             <div class="image__media" self="size-x1">
                 <figure class="full zoom-effect">
                     <div class="aspectRatioPlaceholder" >
-                        <div class="aspect-ratio-fill" style="padding-bottom: {{ object.photo_height | divided_by: object.photo_width | times: 100 }}%;"></div>
+                        <div class="aspect-ratio-fill" style="padding-bottom: {{ object.photo_height | times: 100 | divided_by: object.photo_width }}%;"></div>
                         <img class="img" data-width="{{object.photo_width}}" data-height="{{object.photo_height}}" src="{{ site.baseurl }}/images/newobjects/{{object.photo_file_name}}" alt="generic 101st graphic or image from submission">
                     </div>
                 </figure>
@@ -48,7 +48,7 @@
             <div class="image__media" self="size-x1">
                 <figure class="full zoom-effect">
                     <div class="aspectRatioPlaceholder">
-                        <div class="aspect-ratio-fill" style="padding-bottom: {{ object.photo_height | divided_by: object.photo_width | times: 100 }}%;"></div>
+                        <div class="aspect-ratio-fill" style="padding-bottom: {{ object.photo_height | times: 100 | divided_by: object.photo_width }}%;"></div>
                         <img class="img" data-width="{{object.photo_width}}" data-height="{{object.photo_height}}" src="{{ site.baseurl }}/images/newobjects/{{object.photo_file_name}}" alt="generic 101st graphic or image from submission">
                     </div>
                 </figure>
