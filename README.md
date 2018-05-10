@@ -104,8 +104,8 @@ photo_height: "800"
 —
 ```
 * Make sure you specify the dimensions from the uploaded image file in the corresponding photo_width and photo_height 
-lines inside of the new file. If an image was not submitted, then just use "101.png" for the file name and 800 for both 
-the width and height. Without image width and height correctly entered, the image may be distorted.
+lines inside of the new file. If an image was not submitted, you MUST use "101.png" for the file name and 800 for both 
+the width and height. Without image width and height correctly entered, the site build will fail.
 * When may_we_share has a value of "no" then the person who submitted the item is not displayed on the output page.
 
 NOTE: The code looks for the _ready_ line and makes sure it has a value of "true" before adding the content to the 
