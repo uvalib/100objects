@@ -7,15 +7,8 @@ import browserSync from 'browser-sync';
 import access from 'gulp-accessibility';
 import swPrecache from 'sw-precache';
 import rename from 'gulp-rename';
-import bower from 'gulp-bower';
 
 const $ = gulpLoadPlugins();
-
-// Install bower packages
-gulp.task('bower', function(){
-//  return bower().pipe(gulp.dest('./_site/'));
-    return bower();
-});
 
 // Test our website accessibility
 gulp.task('accessibility', function() {
@@ -41,7 +34,7 @@ gulp.task('accessibility', function() {
 
 // Minify the HTML.
 gulp.task('minify-html', () => {
-  return gulp.src(['_site/**/*.html', '!_site/bower_components/**'])
+  return gulp.src(['_site/**/*.html'])
     .pipe($.htmlmin({
       removeComments: true,
       collapseWhitespace: true,
