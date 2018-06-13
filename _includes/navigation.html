@@ -17,7 +17,15 @@
         <a class="{% if page.title == "Overview" %}active {% endif %} navigation__link" href="{{ site.baseurl }}/overview" aria-label="Exhibition overview">Overview</a>
       </div>
       <div class="navigation__item">
-        <a class="{% if page.title == "Images" %}active {% endif %} navigation__link" href="{{ site.baseurl }}/images" aria-label="Exhibition images">Images</a>
+        <a class="{% if page.title == "Images" %}active {% endif %} navigation__link" onclick="imageViewer.open()" aria-label="Exhibition images">Images</a>
+        {% raw %}
+        <dom-bind id="app">
+          <template>
+            <iron-ajax auto id="ajax" last-response="{{items}}" url="https://uvalib-api.firebaseio.com/mediaobjects.json?orderBy=%22association%22&startAt=%22100objectsCarousel%22&endAt=%22100objectsCarousel%22" handle-as="json"></iron-ajax>
+            <uvalib-imageviewer id="imageViewer" items$="[[items]]" image-prop="image.url" thumb-prop="image.url" html-prop="body" firebase-array></uvalib-imageviewer>
+          </template>
+        </dom-bind>
+        {% endraw %}
       </div>
       <!--div class="navigation__item short_app__link">
         <a class="{% if page.title == "Get the App" %}active {% endif %} navigation__link" href="{{ site.baseurl }}/get-app" aria-label="Exhibition walking tour app">App</a>
