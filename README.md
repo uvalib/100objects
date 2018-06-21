@@ -86,6 +86,7 @@ top of the file directory listing and thus put it at the top of the page. For ex
 _object101z.md_ was created with Molly's submission information into it since her entry is 
 the first received. Then Margo Smith's entry was put in _object101y.md_ since it was the 
 second.
+* Any double quotes within object descriptions or titles need to be escaped or replaced with curly quotes.
 * Populate the new *object101* file with the follow lines (which contain an example of content):
 ```
 —
