@@ -17,7 +17,7 @@
         <a class="{% if page.title == "Overview" %}active {% endif %} navigation__link" href="{{ site.baseurl }}/overview" aria-label="Exhibition overview">Overview</a>
       </div>
       <div class="navigation__item">
-        <a class="{% if page.title == "Images" %}active {% endif %} navigation__link" onclick="imageViewer.open()" aria-label="Exhibition images">Images</a>
+        <a class="{% if page.title == "Images" %}active {% endif %} navigation__link" onclick="imageViewer.open()" aria-label="Exhibition images" style="cursor:pointer">Images</a>
         {% raw %}
         <dom-bind id="app">
           <template>
